@@ -15,9 +15,6 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: hello-world:195
-        readinessProbe:
-          httpGet:
-            path: /
-            port: 80
-          successThreshold: 3
+        image: 184.73.211.202:8082/hello-world:195
+        ports:
+        - containerPort: 8080
